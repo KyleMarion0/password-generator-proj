@@ -16,20 +16,14 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 ran_str = ""
 
-for let in letters:
-    if nr_letters > 0:
-      ran_str += random.choice(letters)
-      nr_letters -= 1
+for char in range(0, nr_letters):
+     ran_str += random.choice(letters)
 
-for num in numbers:
-    if nr_numbers > 0:
-      ran_str += random.choice(numbers)
-      nr_numbers -= 1
+for char in range(0, nr_numbers):
+    ran_str += random.choice(numbers)
 
-for symb in symbols:
-    if nr_symbols > 0:
-      ran_str += random.choice(symbols)
-      nr_symbols -= 1
+for char in range(0, nr_symbols):
+    ran_str += random.choice(symbols)
 
 # Shuffle the characters and return them as a string
 
